@@ -1,13 +1,3 @@
-# scriptCTF 2025 - Writeup Submission
-
-A brief introduction to your submission. You can mention your overall experience or what you enjoyed most about the CTF.
-
-* **Username:** rakshas
-* **Team Name:** Hack-una-matata
-* **GitHub Profile:** `[Link to your GitHub Profile]`
-
----
-
 ## Challenge 1: ForeignDesign
 
 * **Category:** Rev
