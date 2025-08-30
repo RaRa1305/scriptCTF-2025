@@ -82,31 +82,29 @@ n = len(combined)
 
 
 def inv_even(val, i):
-    """Inverts the transformation for even indices."""
     tmp = val ^ 0x5a
     inner = tmp - i*3
     return inner ^ (i+19)
 
 
 def inv_odd(val, i):
-    """Inverts the transformation for odd indices."""
     base = val - 1
     base ^= 19
     return base - 2*(i % 7)
 
 
 # 1. Reverse the mathematical transformations to get the permuted characters
-permuted_chars = []
+permuted = []
 for i, val in enumerate(combined):
     if i % 2 == 0:
         ch = inv_even(val, i)
     else:
         ch = inv_odd(val, i)
-    permuted_chars.append(chr(ch & 0xFF))
+    permuted.append(chr(ch & 0xFF))
 
 # 2. Reverse the permutation to get the original flag
 flag_chars = [None] * n
-for i, ch in enumerate(permuted_chars):
+for i, ch in enumerate(permuted):
     idx = (i * 5 + 3) % n
     flag_chars[idx] = ch
 
