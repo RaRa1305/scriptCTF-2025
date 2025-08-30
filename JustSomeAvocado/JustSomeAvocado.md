@@ -24,6 +24,7 @@ Open the zip file and find the flag hidden there.
 
 ### Flag
 
-scriptCTF{nO_MOr3_n471v3_tr4N5l471on}
+scriptCTF{1_l0ve_d41_v3r0n}
 
 ---
+
